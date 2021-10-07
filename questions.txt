@@ -1,0 +1,96 @@
+1. Fetch the count of all "ACTIVE" coupons
+SELECT COUNT(*) FROM discount_coupon WHERE coupon_status='active';
+
+2. Fetch the details of all coupons whose type is "PRICE".
+SELECT * FROM discount_coupon WHERE coupon_type='price';
+
+3. Fetch the quantity of units for the product whose ID is 17.
+SELECT product_units_01, product_units_02, product_units_03, product_units_04, product_units_05 FROM product WHERE product_id=17;
+
+4. Fetch all unique product sub-categories
+SELECT DISTINCT product_subcategory FROM product
+
+5. Fetch the count of all users who are above 20 years of age
+SELECT COUNT(*) FROM registered_user WHERE CURRENT_DATE - user_dob > 20;
+
+
+6. What will be the output of the following query : "SELECT product_name FROM placed_order WHERE order_id = 40"
+24k Gold Serum
+
+7. What will be the output of the following query : "SELECT COUNT(*) FROM placed_order WHERE payment_status LIKE 'SUCCESS'"
+13
+
+8. What will be the output of the following query : "SELECT coupon_code FROM discount_coupon WHERE coupon_value = 10"
+GABLOGGER
+NEEMA
+MEGHA
+DDIS
+
+
+9. What will be the output of the following query : "SELECT * FROM discount_coupon WHERE coupon_number BETWEEN 150 AND 500"
+
+coupon_id	coupon_code	coupon_type	coupon_value	coupon_number	coupon_status
+6	OBSESSION5	percent	5	197	active
+30	TEHSEENZAFF5	percent	5	200	active
+408	WENDY5	percent	5	179	active
+419	ADITI5	percent	5	498	active
+420	ASHMA5	percent	5	200	active
+
+
+
+10. What will be the output of the following query : "SELECT product_price_01 FROM product WHERE product_category IN ('Skin Care', 'Hair Care', 'Body Care')"
+
+product_price_01
+1199
+999
+899
+899
+550
+550
+700
+450
+449
+600
+300
+549
+650
+650
+650
+650
+650
+650
+550
+550
+350
+550
+399
+550
+449
+449
+300
+399
+475
+375
+350
+799
+550
+249
+249
+349
+349
+1299
+1299
+1299
+1299
+1299
+575
+425
+399
+599
+599
+399
+599
+599
+399
+599
+599
