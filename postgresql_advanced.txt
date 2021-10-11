@@ -11,3 +11,13 @@ INSERT INTO placed_orders(order_timestamp, order_price, order_status, user_id, p
 INSERT INTO placed_orders(order_timestamp, order_price, order_status, user_id, product_id) VALUES('2021-10-11 11:35:20', 700.00, 'pending', 2, 3);
 
 select * from registered_user inner join placed_orders on registered_user.user_id = placed_orders.user_id WHERE order_id = 1;
+
+
+CREATE FUNCTION modify_status()
+RETURNS TRIGGER
+AS $$           
+BEGIN
+UPDATE placed_orders SET order_status = 'completed' WHERE order_id = 1;
+END;                                                                   
+$$
+LANGUAGE 'plpgsql';
