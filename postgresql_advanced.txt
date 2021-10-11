@@ -1,0 +1,1 @@
+select * from registered_user inner join placed_orders on registered_user.user_id = placed_orders.user_id WHERE order_id = 1;
