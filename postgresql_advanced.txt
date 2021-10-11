@@ -21,3 +21,8 @@ UPDATE placed_orders SET order_status = 'completed' WHERE order_id = 1;
 END;                                                                   
 $$
 LANGUAGE 'plpgsql';
+
+CREATE TRIGGER modifier
+AFTER UPDATE ON placed_orders
+FOR EACH ROW
+EXECUTE PROCEDURE modify_status();
