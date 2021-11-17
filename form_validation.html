@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <style>
+        #userNameError, #userEmailError, #userZipError, #userZipError2{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="userForm">
+        <label for="userName">Name* : </label>
+        <input type="text" id="userName">
+        <p id="userNameError">Username cannot be empty</p>
+        <br>
+        <label for="userEmail">Email* : </label>
+        <input type="text" id="userEmail">
+        <p id="userEmailError">User email cannot be empty</p>
+        <br>
+        <label for="userZip">Zip* : </label>
+        <input type="text" id="userZip">
+        <p id="userZipError">User zip cannot be empty</p>
+        <p id="userZipError2">User zip is not in Nagpur</p>
+        <br>
+        <input type="submit">
+        <!-- <input type="button" onclick="validate();" value="Submit"> -->
+    </form>
+
+    <script>
+
+        userForm.addEventListener("submit",
+        (e)=>{
+            e.preventDefault();
+            validate();
+        });
+
+        function validate(){
+
+            var userName = document.getElementById("userName").value;
+            var userZip = document.getElementById("userZip").value;
+            var userEmail = document.getElementById("userEmail").value;
+            console.log(userName);
+            if(userName=="")
+            {
+                document.getElementById("userNameError").style.display="block";
+            }
+            if(userEmail=="")
+            {
+                document.getElementById("userEmailError").style.display="block";
+            }
+            if(userZip=="")
+            {
+                document.getElementById("userZipError").style.display="block";
+            }
+            if(!(parseInt(userZip) > 440000 && parseInt(userZip) < 440099))
+            {
+                document.getElementById("userZipError2").style.display="block";
+            }
+
+           
+        }
+    </script>
+</body>
+</html>
