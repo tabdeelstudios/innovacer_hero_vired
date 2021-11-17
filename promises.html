@@ -15,8 +15,19 @@
             }, 5000);
         });
 
+        let mySecondPromise = new Promise((resolve, reject)=>{
+            console.log("Waiting for promise!");
+            setTimeout(function(){
+                resolve("Success!");
+            }, 2000);
+        });
+
         myFirstPromise.then(()=>{
-            console.log("Hurray!");
+            console.log("First!");
+        });
+
+        mySecondPromise.then(()=>{
+            console.log("Second!");
         });
     </script>
 </body>
