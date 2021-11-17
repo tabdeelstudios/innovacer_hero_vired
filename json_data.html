@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Data</title>
+</head>
+<body id="body">
+    <p id="sample"></p>
+    <script>
+        var myObj;
+        //PARSE
+            // newMeme = JSON.parse('{"id": "61579","name": "One Does Not Simply","url": "https://i.imgflip.com/1bij.jpg","width": 568,"height": 335,"box_count": 2}');
+            // document.getElementById("loadMeme").src=newMeme.url;
+
+        //STRINGIFY
+            // newMeme = JSON.stringify('{"id": "61579","name": "One Does Not Simply","url": "https://i.imgflip.com/1bij.jpg","width": 568,"height": 335,"box_count": 2}');
+            // console.log(newMeme);
+
+        const xmlhttp = new XMLHttpRequest();
+        
+        xmlhttp.open("GET", "https://api.imgflip.com/get_memes");
+        xmlhttp.send();
+
+        xmlhttp.onload = function() {
+            myObj = JSON.parse(this.responseText);
+            console.log(myObj);
+            for(let i in myObj.data.memes)
+            {
+                // console.log(myObj.data.memes[i].url);
+                var img = document.createElement('img');
+                img.src=myObj.data.memes[i].url;
+                document.getElementById('body').appendChild(img);
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
