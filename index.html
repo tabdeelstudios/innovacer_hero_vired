@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        /* p{
+            border: 10px solid transparent;
+            border-image-source: url('download.png');
+            border-image-repeat: round;
+            border-image-slice: 30;
+            border-image-width: 20px;
+        }
+        div{
+            background-image: url(first.jpg), url(second.png);
+            background-position: left top, center top;
+            background-repeat: no-repeat, repeat;
+            height: 500px;
+        } */
+        /* div{
+            height: 200px;
+            width: 700px;
+            background: linear-gradient(to right, pink, purple);
+            background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
+        } */
+        #div1, #div2{
+            height: 500px;
+            width: 300px;
+            
+            /* transform: translate(-50%, -50%); */
+        }
+        #div1{
+            /* background: linear-gradient(to bottom right, pink, purple); */
+            position: relative;
+            background-color: yellow;
+            top:50px;
+            left:200px;
+            z-index: 1;
+        }
+        #div2{
+            position: absolute;
+            visibility: hidden;
+            background-color: blue;
+            top:100px;
+            left:50px;
+            z-index: 2;
+            /* background: linear-gradient(to bottom left, pink, purple); */
+        }
+
+        h2{
+            visibility: hidden;
+        }
+
+        p{
+            /* display: inline;
+            max-width: 30%; */
+        }
+        /* @keyframes fontModify {
+            0% {font-family: 'Comic Sans MS'; background-color: aliceblue;}
+            25% {font-family: 'Verdana';background-color: pink;}
+            50% {font-family: 'Roboto';background-color: yellow;}
+            100% {font-family: 'Helvetica';background-color: green;}
+        } */
+
+        /*img{
+            /* position: absolute;
+            top:220px;
+            left: 500px; */
+            /* position: fixed;
+            bottom: 20px;
+            right:20px; */
+            /* position: relative;
+            top: 100px;
+            left: 300px;  */
+            /* position: static; */
+            /* position: sticky;
+            top:20px; */
+        /*}*/
+
+
+        /*div{
+            /* height: 500px;
+            width: 500px;
+            animation-name: fontModify;
+            animation-duration: 5s;
+            animation-delay: 2;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-timing-function: ease-in-out; */
+            /* transition : width 5s linear 2s;
+            transition-timing-function: ease-in;
+            transform: translate(300px, 400px); */
+        /* } 
+        /* div:hover{
+            width: 800px;
+        } */
+    </style>
+</head>
+<body>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero consequatur, molestias totam ratione similique laudantium atque nulla reiciendis dolore a fugiat repellat corrupti minima voluptas harum, asperiores quam qui quis!</p>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cupiditate assumenda libero, labore, ratione doloribus reprehenderit facilis dolor aspernatur nemo voluptates magni quibusdam, explicabo repellendus rem rerum fugit quae incidunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga nam quibusdam vel deleniti commodi error veritatis rerum, dolorum praesentium quisquam sed atque suscipit quis autem eum laborum corrupti qui dicta.</p>
+    </div> -->
+    <div id="div1">
+
+    </div>
+    
+    <div id="div2">
+
+    </div>
+    <div id="special">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sequi corporis dolore modi quis maiores, delectus consequatur error odio exercitationem provident facilis dolores nobis, molestias inventore culpa possimus nostrum aliquid.</p>
+        <img src="second.png" alt="">
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sequi corporis dolore modi quis maiores, delectus consequatur error odio exercitationem provident facilis dolores nobis, molestias inventore culpa possimus nostrum aliquid.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sequi corporis dolore modi quis maiores, delectus consequatur error odio exercitationem provident facilis dolores nobis, molestias inventore culpa possimus nostrum aliquid.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sequi corporis dolore modi quis maiores, delectus consequatur error odio exercitationem provident facilis dolores nobis, molestias inventore culpa possimus nostrum aliquid.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sequi corporis dolore modi quis maiores, delectus consequatur error odio exercitationem provident facilis dolores nobis, molestias inventore culpa possimus nostrum aliquid.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sequi corporis dolore modi quis maiores, delectus consequatur error odio exercitationem provident facilis dolores nobis, molestias inventore culpa possimus nostrum aliquid.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sequi corporis dolore modi quis maiores, delectus consequatur error odio exercitationem provident facilis dolores nobis, molestias inventore culpa possimus nostrum aliquid.</p>
+        <h2 class="animate__animated animate__jello">This is some text</h2>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sequi corporis dolore modi quis maiores, delectus consequatur error odio exercitationem provident facilis dolores nobis, molestias inventore culpa possimus nostrum aliquid.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sequi corporis dolore modi quis maiores, delectus consequatur error odio exercitationem provident facilis dolores nobis, molestias inventore culpa possimus nostrum aliquid.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sequi corporis dolore modi quis maiores, delectus consequatur error odio exercitationem provident facilis dolores nobis, molestias inventore culpa possimus nostrum aliquid.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sequi corporis dolore modi quis maiores, delectus consequatur error odio exercitationem provident facilis dolores nobis, molestias inventore culpa possimus nostrum aliquid.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sequi corporis dolore modi quis maiores, delectus consequatur error odio exercitationem provident facilis dolores nobis, molestias inventore culpa possimus nostrum aliquid.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sequi corporis dolore modi quis maiores, delectus consequatur error odio exercitationem provident facilis dolores nobis, molestias inventore culpa possimus nostrum aliquid.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sequi corporis dolore modi quis maiores, delectus consequatur error odio exercitationem provident facilis dolores nobis, molestias inventore culpa possimus nostrum aliquid.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sequi corporis dolore modi quis maiores, delectus consequatur error odio exercitationem provident facilis dolores nobis, molestias inventore culpa possimus nostrum aliquid.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sequi corporis dolore modi quis maiores, delectus consequatur error odio exercitationem provident facilis dolores nobis, molestias inventore culpa possimus nostrum aliquid.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sequi corporis dolore modi quis maiores, delectus consequatur error odio exercitationem provident facilis dolores nobis, molestias inventore culpa possimus nostrum aliquid.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sequi corporis dolore modi quis maiores, delectus consequatur error odio exercitationem provident facilis dolores nobis, molestias inventore culpa possimus nostrum aliquid.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sequi corporis dolore modi quis maiores, delectus consequatur error odio exercitationem provident facilis dolores nobis, molestias inventore culpa possimus nostrum aliquid.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sequi corporis dolore modi quis maiores, delectus consequatur error odio exercitationem provident facilis dolores nobis, molestias inventore culpa possimus nostrum aliquid.</p>
+    </div>
+    <button onclick="moveDiv()">Click to see the effect</button>
+
+    <script>
+        function moveDiv(){
+            // document.getElementById("special").style.transform = "translate(300px, 400px)";
+            // document.getElementById("special").style.transform = "rotate(30deg)";
+            // document.getElementById("special").style.transform = "scale(0.25, 0.75)";
+            // document.getElementById("special").style.transform = "skew(20deg, 20deg)";
+            
+        }
+    </script>
+</body>
+</html>
