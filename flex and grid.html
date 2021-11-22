@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1{
+            font-size: 48px;
+        }
+        div{
+            background-color: purple;
+        }
+
+        img{
+            position: fixed;
+            display: none;
+            bottom: 50px;
+            right: 30px;
+        }
+
+        @media only screen and (max-width: 576px) {
+            h1{
+                font-size: 32px;
+            }
+
+            img{
+                display: inline;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            div{
+                background-color: red;
+            }
+        } */
+        
+
+        img{
+            height: 100px;
+            width: 100px;
+        }
+
+        /* .flex-container{
+            display: flex;
+            height: 700px;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+            /* Arrange content */
+            /* justify-content: space-around;
+            align-items: flex-end;
+            align-content: space-between;
+        } */
+
+        /* article{
+            max-width: 300px;
+        }
+
+        #special{
+            align-self: flex-end;
+        } */
+
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        @media only screen and (max-width: 576px) {
+            .grid-container{
+                display: grid;
+                grid-template-columns: auto;
+            }
+        }
+        /*Extra small devices like phones; width < 600px*/
+
+        @media only screen and (min-width:576px) {
+            .grid-container{
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+        }
+        /*Small devices like portrait tablets; width > 600px*/
+
+        @media only screen and (min-width: 768px) {
+            .grid-container{
+                background-color: pink;
+                grid-template-columns: auto auto auto;
+            }
+               
+        } /*Landscape tablets; width > 768px*/
+
+        @media only screen and (min-width: 992px) {
+            .grid-container{
+                background-color: gray;
+                grid-template-columns: auto auto auto;
+            }
+        } /*Laptops and desktops; width > 992px*/
+
+        @media only screen and (min-width: 1200px) {
+            .grid-container{
+                background-color: black;
+                grid-template-columns: auto auto auto;
+            }
+        }
+        /*Large laptops and screens; width > 1200px*/
+
+
+        article{
+            padding: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <h1>This is a heading</h1>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem optio, mollitia sunt obcaecati quis adipisci voluptatibus, quaerat est consectetur placeat magni voluptates pariatur. Tempore molestiae commodi nam minima ab perferendis.</p>
+    </div>
+    <img src="wa.png" alt="" height="100px" width="100px"> -->
+    <section class="grid-container">
+        <article>
+            <img src="wa.png" alt="">
+            <p>1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum esse, quae nemo consequatur modi quos voluptatum beatae voluptate molestias similique, illum saepe nisi, velit quasi maxime fugiat id eius laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum esse, quae nemo consequatur modi quos voluptatum beatae voluptate molestias similique, illum saepe nisi, velit quasi maxime fugiat id eius laboriosam.</p>
+        </article>
+        <article id="special">
+            <img src="wa.png" alt="">
+            <p>2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum esse, quae nemo consequatur modi quos voluptatum beatae voluptate molestias similique, illum saepe nisi, velit quasi maxime fugiat id eius laboriosam.</p>
+        </article>
+        <article>
+            <img src="wa.png" alt="">
+            <p>3. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum esse, quae nemo consequatur modi quos voluptatum beatae voluptate molestias similique, illum saepe nisi, velit quasi maxime fugiat id eius laboriosam.</p>
+        </article>
+        <article>
+            <img src="wa.png" alt="">
+            <p>4. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum esse, quae nemo consequatur modi quos voluptatum beatae voluptate molestias similique, illum saepe nisi, velit quasi maxime fugiat id eius laboriosam.</p>
+        </article>
+        <article>
+            <img src="wa.png" alt="">
+            <p>5. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum esse, quae nemo consequatur modi quos voluptatum beatae voluptate molestias similique, illum saepe nisi, velit quasi maxime fugiat id eius laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum esse, quae nemo consequatur modi quos voluptatum beatae voluptate molestias similique, illum saepe nisi, velit quasi maxime fugiat id eius laboriosam.</p>
+        </article>
+        <article>
+            <img src="wa.png" alt="">
+            <p>6. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum esse, quae nemo consequatur modi quos voluptatum beatae voluptate molestias similique, illum saepe nisi, velit quasi maxime fugiat id eius laboriosam.</p>
+        </article>
+        <article>
+            <img src="wa.png" alt="">
+            <p>7. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum esse, quae nemo consequatur modi quos voluptatum beatae voluptate molestias similique, illum saepe nisi, velit quasi maxime fugiat id eius laboriosam.</p>
+        </article>
+        <article>
+            <img src="wa.png" alt="">
+            <p>8. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum esse, quae nemo consequatur modi quos voluptatum beatae voluptate molestias similique, illum saepe nisi, velit quasi maxime fugiat id eius laboriosam.</p>
+        </article>
+    </section>
+</body>
+</html>
